@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Login -->
+    <section id="login" class="my-5">
+        <div class="container">
+            <div class="row">
+                <!-- Column-1 -->
+                <div class="col-lg-6">
+                    <img class="w-100" src="./Images/CollegeStudentsImage-1.jpeg" alt="College Students Image-1"
+                        height="100%">
+                </div>
+                <!-- End Column-1 -->
+
+                <!-- Column-2 -->
+                <div class="col-lg-6 bglogin p-4">
+                    <form action="/verifyLogin" method="post">
+                        <!-- logo -->
+                        <center>
+                            <img class="mb-4 rounded-circle" src="./Images/logo.jpeg" alt="logo" width="20%" height="20%">
+                        </center>
+
+                        <!-- Heading (Login) -->
+                        <h1 class="mb-5 text-center">Login</h1>
+
+                        <% if(message.length > 0){ %>
+                            <div class="alert alert-success">
+                                <%= message %>
+                            </div>
+                        <% } %>
+
+                        <% if(msg.length > 0){ %>
+                            <div class="alert alert-warning">
+                                <%= msg %>
+                            </div>
+                        <% } %>
+
+                        <!-- Email -->
+                        <div class="row mb-3">
+                            <div class="col-lg-2 text-center bg-secondary rounded text-light fw-light my-auto p-2">Email</div>
+                            <div class="col-lg-10">
+                                <input class="form-control" name="email" type="email" placeholder="name@example.com" required>
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="row mb-5">
+                            <div class="col-lg-2 text-center bg-secondary rounded text-light fw-light my-auto p-2">Password</div>
+                            <div class="col-lg-10">
+                                <input class="form-control" name="password" type="password" required>
+                            </div>
+                        </div>
+
+                        <!-- Button (Login) -->
+                        <center>
+                            <button class="btn btn-primary mb-5 btn-lg" type="submit">Login</button>
+                        </center>
+                        
+                        <!-- Register Now -->
+                        <center>
+                            <p class="text-uppercase fw-light">Don't have an account? &nbsp;<a href="/register">Register Now</a></p>
+                        </center>
+                    </form>
+                </div>
+                <!-- End Column-2 -->
+            </div>
+        </div>
+    </section>
+    <!-- End Login -->
+
+    <!-- Java Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

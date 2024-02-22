@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ADMISSION PORTAL</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Bootstrap CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body class="bg-body-tertiary">
+
+    <!-- Navbar -->
+    <section id="navbar" class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler mobileViewButton" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse d-lg-flex collapse justify-content-between text-center"
+                    id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0 webViewPosition" href="#">
+                        <img class="rounded-circle" src="/Images/logo.jpeg" alt="logo" width="50px" height="50px">
+                    </a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-end">
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-light" aria-current="page" href="/home">HOME</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link active text-light" href="/about">ABOUT</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-light" href="/contact">CONTACT</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link text-light text-uppercase bg-info" href="#"><%= n %></a>
+                        </li>
+                        <li class="nav-item dropdown my-auto">
+                            <a href="#"
+                                class="nav-link d-block link-body-emphasis text-decoration-none dropdown-toggle text-light"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src=" <%= i.url %>" alt="mdo" width="40" height="40"
+                                    class="rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/logout">Log out</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item my-auto" href="/logout">
+                            <button class="btn btn-primary me-3 border-light" >Log out</button>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- End Navbar -->

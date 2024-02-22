@@ -1,0 +1,117 @@
+<%-include('header.ejs') %>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <div class="container">
+            <div class="py-5 text-center">
+                <h2 class="mt-5 pt-5">Know More</h2>
+                <p class="lead">We are available to assist you anytime.</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span>Location</span>
+                    </h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114566.12366376573!2d78.05655149726559!3d26.190452499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c38cbfab5ebd%3A0x32bb0d277b5bc9d8!2sMaharana%20Pratap%20College%20of%20Technology%2C%20Gwalior!5e0!3m2!1sen!2sin!4v1698776631524!5m2!1sen!2sin"
+                        width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Contact Us!</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3 paddingValue">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Username"
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email <span
+                                        class="text-body-secondary">(Optional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address2" class="form-label">Address 2 <span
+                                        class="text-body-secondary">(Optional)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">State</label>
+                                <select class="form-select" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check paddingValue">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Save this information for next time</label>
+                        </div>
+
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us -->
+
+<%-include('footer.ejs') %>    

@@ -1,0 +1,49 @@
+<%- include('../header.ejs') %>
+
+<div class="container">
+    <h1>Display</h1>
+    <div class="container mt-5">
+        <% if(msg.length > 0){ %>
+        <div class="alert alert-success">
+            <%= msg %>
+        </div>
+    <% } %>
+    </div>
+
+    <table class="table table-bordered" style="margin-top: 70px;">
+        <thead> 
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Status</th>
+                <th>Comment</th>
+                <th>Action</th>
+            </tr>
+            <% d.forEach((item)=>{ %>
+                <tbody>
+                    <tr>
+                        <td><%= item._id %></td>
+                        <td><%= item.name %></td>
+                        <td><%= item.email %></td>
+                        <td><%= item.course %></td>
+                        <td><%= item.status %></td>
+                        <td><%= item.comment %></td>
+                        <td>
+                            <a href="/courseView/<%= item._id %>" class="btn btn-primary">View</a>
+                            <a href="/courseEdit/<%= item._id %>" class="btn btn-warning">Edit</a>
+                            <!-- <a href="/courseDelete/<%= item._id %>" class="btn btn-danger">Delete</a> -->
+                        </td>
+                    </tr>
+                </tbody>
+            <%  })  %>
+        </thead>
+        
+    </table>
+</div>
+
+<%- include('../footer.ejs') %>
+
+
+

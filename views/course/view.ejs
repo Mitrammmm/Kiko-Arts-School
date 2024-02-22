@@ -1,0 +1,31 @@
+<%- include('../header.ejs') %>
+
+
+<div class="container">
+    <h1>Display View</h1>
+
+    <table class="table table-bordered" style="margin-top: 70px;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+            </tr>
+                <tbody>
+                    <tr>
+                        <td><%= d._id %></td>
+                        <td><%= d.name %></td>
+                        <td><%= d.email %></td>
+                        <td><%= d.course %></td>
+                    </tr>
+                </tbody>
+        </thead>
+        
+    </table>
+</div>
+
+<%- include('../footer.ejs') %>
+
+
+

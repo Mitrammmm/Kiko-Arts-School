@@ -1,0 +1,56 @@
+/* Add this style for the dashboard options */
+.dashboard-options {
+    margin-top: 20px;
+}
+
+.dashboard-options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-options li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.dashboard-content {
+    margin-top: 20px;
+}
+
+.dashboard-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.dashboard-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.dashboard-footer p {
+    margin-bottom: 10px;
+}
+
+.dashboard-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-footer li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.dashboard-footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.dashboard-footer a:hover {
+    text-decoration: underline;
+}

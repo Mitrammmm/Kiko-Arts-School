@@ -1,0 +1,97 @@
+/* ---------------------------------------------------------------
+                            General
+------------------------------------------------------------------ */
+
+body{
+    background: #f7f0bd !important;
+}
+
+/* ::placeholder{
+    color: gray !important;
+    font-weight: lighter;
+} */
+
+/* label{
+    padding-top: 10% !important;
+} */
+
+/* button{
+    background: #2a1a6f !important;
+} */
+
+/* ---------------------------------------------------------------
+                            #navbar
+------------------------------------------------------------------ */
+
+#navbar nav{
+    background: #0000009c !important;
+}
+
+.webViewPosition{
+    text-align: start !important;
+}
+
+/* ---------------------------------------------------------------
+                            #carousel
+------------------------------------------------------------------ */
+
+.carouselHeight{
+    height: 100vh;
+}
+
+/* ---------------------------------------------------------------
+                            #login
+------------------------------------------------------------------ */
+
+.bglogin{
+    background: #f7f0bd;
+}
+
+/* ---------------------------------------------------------------
+                            #footer
+------------------------------------------------------------------ */
+
+#footer
+{
+    background: #2a1a6f;
+}
+
+#social{
+    background: white;
+}
+
+#detail p{
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------
+                            About
+------------------------------------------------------------------ */
+
+.page-title-area {
+    position: relative;
+    z-index: 1;
+}
+
+.paddingValue label
+{
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+                            Media Query
+------------------------------------------------------------------ */
+
+@media (max-width:992px) {
+    #navbarsExample11{
+        justify-content: center !important;
+    }
+
+    .mobileViewButton{
+        background: white !important;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
