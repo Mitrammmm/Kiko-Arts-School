@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const liveUrl = 'mongodb+srv://saumitrapahalvan:<mitra10>@admissionportal.jcaline.mongodb.net/AdmissionPortal?retryWrites=true&w=majority&appName=admissionportal'
+const liveUrl = 'mongodb+srv://saumitrapahalvan:mitra11@cluster0.nm5xebz.mongodb.net/AdmissionPortall?retryWrites=true&w=majority&appName=Cluster0'
 const localUrl = 'mongodb://127.0.0.1:27017/admission'
 
 const connectDb=()=>{

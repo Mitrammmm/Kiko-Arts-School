@@ -100,7 +100,7 @@
                                 <h2>BA in Arts (Fine/ Visual/ Performing)</h2>
                                 <p class="card-text">A Bachelor of Fine Arts (BFA) is a standard undergraduate degree
                                  for students for pursuing a professional education in the visual, fine or performing arts.</p>
-                                <% if(bca){ %>
+                                <% if(b){ %>
                                     <a href="/course_display" class="btn btn-info">Course Display</a>
                                 <% }else{ %>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -119,7 +119,7 @@
                                 <p class="card-text">The Bachelor of Design (BDes) degree is a four-year degree that
                                      offers three tracks for specialization: Products (industrial design), Communications 
                                      (graphic design), and Environments (both physical and digital).</p>
-                                <% if(mca){ %>
+                                <% if(bca){ %>
                                     <a href="/course_display" class="btn btn-info">Course Display</a>
                                 <% }else{ %>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -138,7 +138,7 @@
                                 <p class="card-text">The Bachelor of Arts in Animation is an undergraduate degree program 
                                     that can be completed in three years.2 It is designed for students who wish to continue
                                      to graduate studies and those with an interest in animation</p>
-                                    <% if(b){ %>
+                                    <% if(mca){ %>
                                         <a href="/course_display" class="btn btn-info">Course Display</a>
                                     <% }else{ %>
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -182,7 +182,7 @@
                     <input type="date" name="dob" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="">Address</label>
+                    <label for="">Adress</label>
                     <textarea name="address" class="form-control" ></textarea> 
                 </div>
                 <div class="mb-3">
@@ -191,17 +191,16 @@
                     <input type="radio" name="Gender" value="Female">Female
                 </div>
                 <div class="mb-3">
-                    <label for="">Choice of School</label>
+                    <label for="">Education</label>
                     <select name="education" class="form-control form-select">
                         <option value="">Select Education</option>
-                        <option value="Kiko School of Arts">Kiko School of Arts</option>
-                        <option value="Luna School of Arts">Luna School of Arts</option>
-                        <option value="Khushi School of Arts">Khushi School of Arts</option> 
+                        <option value="10">10th</option>
+                        <option value="12">12th</option> 
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="">Course</label>
-                    <input type="text" value="Animation" name="course">
+                    <label for="">Cousce</label>
+                    <input type="text" value="btech" name="course">
                 </div>
                 <button type="submit" class="btn btn-success" >Submit</button>
             </form>
@@ -238,7 +237,7 @@
                     <input type="date" name="dob" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="">Address</label>
+                    <label for="">Adress</label>
                     <textarea name="address" class="form-control" ></textarea> 
                 </div>
                 <div class="mb-3">
@@ -247,17 +246,16 @@
                     <input type="radio" name="Gender" value="Female">Female
                 </div>
                 <div class="mb-3">
-                    <label for="">Choice of School</label>
+                    <label for="">Education</label>
                     <select name="education" class="form-control form-select">
                         <option value="">Select Education</option>
-                        <option value="Kiko School of Arts">Kiko School of Arts</option>
-                        <option value="Luna School of Arts">Luna School of Arts</option>
-                        <option value="Khushi School of Arts">Khushi School of Arts</option> 
+                        <option value="10">10th</option>
+                        <option value="12">12th</option> 
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="">Course</label>
-                    <input type="text" value="FineArts" name="course">
+                    <label for="">Cousce</label>
+                    <input type="text" value="bca" name="course">
                 </div>
                 <button type="submit" class="btn btn-info">Submit</button>
             </form>
@@ -294,7 +292,7 @@
                     <input type="date" name="dob" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="">Address</label>
+                    <label for="">Adress</label>
                     <textarea name="address" class="form-control" ></textarea> 
                 </div>
                 <div class="mb-3">
@@ -303,17 +301,16 @@
                     <input type="radio" name="Gender" value="Female">Female
                 </div>
                 <div class="mb-3">
-                    <label for="">Choice of School</label>
+                    <label for="">Education</label>
                     <select name="education" class="form-control form-select">
                         <option value="">Select Education</option>
-                        <option value="Kiko School of Arts">Kiko School of Arts</option>
-                        <option value="Luna School of Arts">Luna School of Arts</option>
-                        <option value="Khushi School of Arts">Khushi School of Arts</option> 
+                        <option value="10">10th</option>
+                        <option value="12">12th</option> 
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="">Course</label>
-                    <input type="text" value="Design" name="course">
+                    <label for="">Cousce</label>
+                    <input type="text" value="mca" name="course">
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>

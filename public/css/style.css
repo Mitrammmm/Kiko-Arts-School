@@ -3,7 +3,7 @@
 ------------------------------------------------------------------ */
 
 body{
-    background: #f7f0bd !important;
+    background: #94c9b1 !important;
 }
 
 /* ::placeholder{
@@ -44,8 +44,12 @@ body{
 ------------------------------------------------------------------ */
 
 .bglogin{
-    background: #f7f0bd;
+    background: #8dc572;
 }
+
+/* .my-5{
+    margin-top: 20px;
+} */
 
 /* ---------------------------------------------------------------
                             #footer
@@ -53,11 +57,12 @@ body{
 
 #footer
 {
-    background: #2a1a6f;
+    background: #00684A;  
+    
 }
 
 #social{
-    background: white;
+    background: #00ED64;
 }
 
 #detail p{
@@ -78,6 +83,26 @@ body{
     padding: 0 !important;
 }
 
+.facilities {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.facility {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.facility p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#hero{
+    background: #94c9b1 !important;
+}
+
 /* ---------------------------------------------------------------
                             Media Query
 ------------------------------------------------------------------ */
@@ -93,5 +118,37 @@ body{
     }
 }
 
+/* ---------------------------------------------------------------
+                            home
+------------------------------------------------------------------ */
+#courses{
+    background-color: rgb(164, 205, 240);
+}
 
+#detail{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: haha;
+    animation: haha 2s infinite alternate;
+}
+@keyframes haha{
+    0%{border-radius: 0%;}
+    25%{background-color: red;}
+    50%{background-color: aqua;}
+    75%{background-color: yellow;}
+    100%{border-radius: 50%;background-color: burlywood;color: blue;}
+}
+
+/* ---------------------------------------------------------------
+                           Contact
+------------------------------------------------------------------ */
+#contact{
+    background: #94c9b1 !important;
+}
+
+/* ---------------------------------------------------------------
+                           Display
+------------------------------------------------------------------ */
+#display{
+    margin-top: 17px;
+}
 
