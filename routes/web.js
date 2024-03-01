@@ -27,7 +27,7 @@ route.get('/logout',FrontController.logout)
 
 //profile
 route.get('/profile',checkUserAuth,FrontController.profile)
-route.get('/updateProfile',checkUserAuth,FrontController.updateProfile)
+route.post('/updateProfile',checkUserAuth,FrontController.updateProfile)
 
 // to change password
 route.post('/changepassword',checkUserAuth,FrontController.changepassword)
