@@ -34,7 +34,7 @@ route.post('/changepassword',checkUserAuth,FrontController.changepassword)
 
 //route to course
 route.post("/course_insert",checkUserAuth,CourseController.courseInsert)
-route.get("/course_display",checkUserAuth,CourseController.courseDisplay)
+route.post("/course_display",checkUserAuth,CourseController.courseDisplay)
 //route for course view
 route.get("/courseView/:id",checkUserAuth,CourseController.courseView)
 //edit & update
