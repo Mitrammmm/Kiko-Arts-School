@@ -46,7 +46,7 @@ class CourseController{
             const {name,image} =req.userData
             const data =await CourseModel.findById(req.params.id)
             //console.log(data)
-            res.render('course/view',{n:this.name,i:image,d:data})
+            res.render('course/view',{n:name,i:image,d:data})
         }
         catch(error){
             console.log(error)
@@ -59,7 +59,7 @@ class CourseController{
             const {name,image} =req.userData
             const data =await CourseModel.findById(req.params.id)
             //console.log(data)
-            res.render('course/edit',{n:this.name,i:image,d:data})
+            res.render('course/edit',{n:name,i:image,d:data})
         }
         catch(error){
             console.log(error)
@@ -98,7 +98,8 @@ class CourseController{
             await CourseModel.findByIdAndDelete(req.params.id)
             //console.log(data)
             req.flash('success','Course Deleted Successfully')
-            res.redirect('/course_display')
+            // res.redirect('/course_display')
+            res.redirect('/admin/dashboard')
         }
         catch(error){
             console.log(error)
@@ -123,7 +124,7 @@ class CourseController{
             to: email, // list of receivers
             subject: ` Course ${course}`, // Subject line
             text: "heelo", // plain text body
-            html: `<b>${name}</b> Course  <b>${course}</b> Successfully Inserted :) <br> `, 
+            html: `<b>${name}</b> <br>Thank you for enrolling for <b>${course}</b> <br> We will let u know for further process!! `, 
         });
     };
 }

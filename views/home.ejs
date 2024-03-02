@@ -15,17 +15,17 @@
             <div class="carousel-inner">
                 <!-- item-1 -->
                 <div class="carousel-item active" data-bs-interval="4000">
-                    <img class="carouselHeight" src="./Images/cmp1.jpg" alt="Campus Image-1" width="100%">
+                    <img class="carouselHeight" src="./Images/pexels1.jpg" alt="Campus Image-1" width="100%">
                 </div>
 
                 <!-- item-2 -->
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img class="carouselHeight" src="./Images/cmp2.jpg" alt="Campus Image-2" width="100%">
+                    <img class="carouselHeight" src="./Images/pexels2.jpg" alt="Campus Image-2" width="100%">
                 </div>
 
                 <!-- item-3 -->
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img class="carouselHeight" src="./Images/cmp3.jpg" alt="Campus Image-3" width="100%">
+                    <img class="carouselHeight" src="./Images/pexels3.jpg" alt="Campus Image-3" width="100%">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -46,8 +46,9 @@
         <section class="pt-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-bold">Hello There!!!</h1>
-                    <p class="lead text-body-secondary">Kiko Arts School Welcomes You</p>
+                    <h1 class="fw-bold">Hello <%= n %></h1> 
+                    <p class="lead text-body-secondary">Kiko Arts School Welcomes You</p> 
+                    <hr>
                 </div>
             </div>
         </section>
@@ -100,7 +101,7 @@
                                 <h2>BA in Arts (Fine/ Visual/ Performing)</h2>
                                 <p class="card-text">A Bachelor of Fine Arts (BFA) is a standard undergraduate degree
                                  for students for pursuing a professional education in the visual, fine or performing arts.</p>
-                                <% if(animation){ %>
+                                <% if(fineArt){ %>
                                     <a href="/course_display" class="btn btn-info">Course Display</a>
                                 <% }else{ %>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -119,7 +120,7 @@
                                 <p class="card-text">The Bachelor of Design (BDes) degree is a four-year degree that
                                      offers three tracks for specialization: Products (industrial design), Communications 
                                      (graphic design), and Environments (both physical and digital).</p>
-                                <% if(fineArt){ %>
+                                <% if(design){ %>
                                     <a href="/course_display" class="btn btn-info">Course Display</a>
                                 <% }else{ %>
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -138,7 +139,7 @@
                                 <p class="card-text">The Bachelor of Arts in Animation is an undergraduate degree program 
                                     that can be completed in three years.2 It is designed for students who wish to continue
                                      to graduate studies and those with an interest in animation</p>
-                                    <% if(design){ %>
+                                    <% if(animation){ %>
                                         <a href="/course_display" class="btn btn-info">Course Display</a>
                                     <% }else{ %>
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"

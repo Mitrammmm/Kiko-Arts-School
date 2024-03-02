@@ -173,49 +173,6 @@ class FrontController{
         }
     }
 
-    //update profile
-    // static updateProfile = async (req, res) => {
-        
-    //     try {
-    //         const { id } = req.userData
-    //         const {name,email} =req.body
-    //         if (req.files) {
-    //             const user = await UserModel.findById(id)
-    //             const imageID = user.image.public_id
-    //             console.log(imageID)
-
-    //             //deleting image from Cloudinary
-    //             await cloudinary.uploader.destroy(imageID)
-    //             //new image update
-    //             const imagefile = req.files.image
-    //             const imageupload = await cloudinary.uploader.upload(imagefile.tempFilePath, {
-    //                 folder: 'userProfile'
-    //             })
-    //             var data = {
-    //                 name: name,
-    //                 email: email,
-    //                 image: {
-    //                     public_id: imageupload.public_id,
-    //                     url: imageupload.secure_url
-    //                 }
-    //             }
-    //         } else {
-    //             var data = {
-    //                 name: name,
-    //                 email: email,
-                    
-    //             }
-    //         }
-    //         await UserModel.findByIdAndUpdate(id, data)
-    //         req.flash('success', "Update Profile successfully")
-    //         res.redirect('/profile')
-            
-            
-    //     } catch(error) {
-    //         console.log(error)
-    //     }
-    // }
-
     static updateProfile = async (req, res) => {
         try{
             // const {name,image,email,id} = req.userData;
