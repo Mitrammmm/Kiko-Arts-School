@@ -34,13 +34,13 @@ class FrontController{
         try{
             const {name,image,email,id} = req.userData;
 
-            const btech = await CourseModel.findOne({user_id:id,course:"btech"})
-            const bca = await CourseModel.findOne({user_id:id,course:"bca"})
-            const mca = await CourseModel.findOne({user_id:id,course:"mca"})
-            console.log(btech)
+            const animation = await CourseModel.findOne({user_id:id,course:"Animation"})
+            const fineArt = await CourseModel.findOne({user_id:id,course:"FineArts"})
+            const design = await CourseModel.findOne({user_id:id,course:"Design"})
+            // console.log(btech)
 
             //res.send("home page from FrontCntroller")
-            res.render('home',{n:name , i:image , e:email, b:btech , bca:bca , mca:mca});
+            res.render('home',{n:name , i:image , e:email, design:design , animation:animation , fineArt:fineArt});
         }catch (error) {
             console.log(error)
         }

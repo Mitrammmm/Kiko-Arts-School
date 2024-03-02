@@ -33,7 +33,7 @@ class CourseController{
             const {name,image,id} =req.userData
             const data =await CourseModel.find({user_id:id})
             //console.log(data)
-            res.render('course/display',{n:this.name,i:image,d:data,msg:req.flash("success")})
+            res.render('course/display',{n:name,i:image,d:data,msg:req.flash("success")})
         }
         catch(error){
             console.log(error)
@@ -70,7 +70,7 @@ class CourseController{
         try{
             //console.log(req.body)
             // //console.log(req.params.id)
-            const {name,email,dob,address,gender,education,course} =req.body
+            const {name,email,phone,dob,address,gender,education,course} =req.body
             const {image} =req.userData
             await CourseModel.findByIdAndUpdate(req.params.id,{
                 name:name,
@@ -114,8 +114,8 @@ class CourseController{
             port: 587,
 
             auth: {
-                user: "meramail@gmail.com",
-                pass: "uskapassword",
+                user: "saumitrapahalvan@gmail.com",
+                pass: "kvyx unzs nmdz rdts",
             },
         });
         let info = await transporter.sendMail({
