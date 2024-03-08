@@ -47,6 +47,15 @@ route.get("/courseDelete/:id",checkUserAuth,CourseController.courseDelete)
 route.get("/admin/dashboard",checkUserAuth,AdminController.dashboard)
 route.post("/update_status/:id",checkUserAuth,AdminController.update_status)
 
+//for forget password
+route.post('/forget_password', FrontController.forgetpassword)
+
+//for reset password
+route.get("reset-password",FrontController.reset_Password)
+route.post('/reset_Password1',FrontController.reset_Password1)
+
+//verifymail
+route.get('/verify',FrontController.verify)
 
 
 module.exports = route;

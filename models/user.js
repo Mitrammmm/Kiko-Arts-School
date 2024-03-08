@@ -26,7 +26,15 @@ const UserSchema = new mongoose.Schema({
             type: String,
             required: true,
         },
-    }
+    },
+    token:{
+        type:String
+    },
+    is_verified:{
+        type:Number,
+        default:0
+    },
+
 },{timestamps: true})
 
 const UserModel = mongoose.model('user',UserSchema)

@@ -42,8 +42,14 @@
                         <div class="container">
                             
                             <% if(message.length > 0){ %>
-                                <div class="alert alert-danger">
+                                <div class="alert alert-success">
                                     <%= message %>
+                                </div>
+                            <% } %>
+    
+                            <% if(msg.length > 0){ %>
+                                <div class="alert alert-warning">
+                                    <%= msg %>
                                 </div>
                             <% } %>
 

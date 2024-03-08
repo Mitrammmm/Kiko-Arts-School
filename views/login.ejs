@@ -56,6 +56,12 @@
                             </div>
                         <% } %>
 
+                        <!-- <% if(msgfp.length > 0){ %>
+                            <div class="alert alert-success">
+                                <%= msgfp %>
+                            </div>
+                        <% } %> -->
+
                         <!-- Email -->
                         <div class="row mb-3">
                             <div class="col-lg-2 text-center bg-secondary rounded text-light fw-light my-auto p-2">Email</div>
@@ -71,6 +77,11 @@
                                 <input class="form-control" name="password" type="password" required>
                             </div>
                         </div>
+                        <!--Forget password button-->
+                        <div class="row mb-5">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#forgetpassword">Forgot Password</a>
+                        </div>
+
 
                         <!-- Button (Login) -->
                         <center>
@@ -99,10 +110,43 @@
     </section>
     <!-- End Login -->
 
+
     <!-- Java Script Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+
+    <!-- Forget pass model -->
+  <div class="modal fade" id="forgetpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Forget Password</h1>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                        <form action="forget_password" method="post">
+                            
+                            <div class="mb-3">
+                                <label for="">Email</label>
+                                <input type="email"  name="email" class="form-control">
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--End for pass-model -->
+
+    
+
 </body>
 
 </html>
