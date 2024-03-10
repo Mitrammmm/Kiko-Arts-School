@@ -165,7 +165,7 @@ class FrontController {
       from: "test@gmail.com", // sender address
       to: e, // list of receivers
       subject: "For Verification mail", // Subject line
-      text: "heelo", // plain text body
+      text: "hello", // plain text body
       html:
         "<p>Hii " +
         n +
@@ -334,7 +334,7 @@ class FrontController {
           { email: email },
           { $set: { token: randomString } }
         );
-        this.sendEmail(userData.name, userData.email, randomString);
+        this.sendresetemail(userData.name, userData.email, randomString);
         req.flash("success", "Check Your email to reset Your Password!");
         res.redirect("/");
       } else {

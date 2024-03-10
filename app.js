@@ -5,6 +5,7 @@ const port = 3000
 const web = require("./routes/web")
 const connectDb = require("./db/dbcon")
 
+//Now middleware setup,
 //cookie
 const cookieparser = require('cookie-parser')
 app.use(cookieparser()) //used to get token
@@ -32,6 +33,7 @@ app.use(flash());
 
 
 //to get data as object!
+// configures Express to parse incoming request bodies with form data.
 app.use(express.urlencoded({extended:false}))
 
 //connection to database
@@ -59,6 +61,8 @@ app.use(express.static('public'))
 
 
 //sending main page'/' to other 'web' page
+//tells Express to use the routes defined in the web module for handling requests,
+// to the root path.
 app.use('/',web)
 
 //create server

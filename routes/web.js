@@ -16,6 +16,7 @@ const AdminController = require("../controllers/AdminController")
 //routing to FrontController
 route.get('/',FrontController.login)
 route.get('/register',FrontController.register)
+route.get('/login',FrontController.login)
 // route.get('/home',FrontController.home)
 route.get('/home',checkUserAuth,FrontController.home)
 route.get('/about',checkUserAuth,FrontController.about)
