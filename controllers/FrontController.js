@@ -128,7 +128,7 @@ class FrontController {
               res.cookie("token", token);
               this.send_verify_mail(n, e, userData._id);
               req.flash("Success", "Registration successful.");
-              res.redirect("/register");
+              res.redirect("/login");
             } else {
               req.flash("error", "not a Verified user user");
               res.redirect("/register");
